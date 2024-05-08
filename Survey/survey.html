@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css" >
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to fill out our survey
+        </p>
+      </header>
+
+      <!--Beginning of Form-->
+
+      <!--Personal Details-->
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <!--Proficiency-->
+
+        <div class="form-group">
+          <p>How would you classify your programming proficiency level??</p>
+          <select id="dropdown" name="proficiency" class="form-control" required>
+            <option disabled selected value>Select current proficiency</option>
+            <option value="novice">Novice</option>
+            <option value="begineer">Begineer</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <!--Time Dedication-->
+
+        <div class="form-group">
+          <p>How much time can you dedicate to learning programming each day?</p>
+          <label>
+            <input name="learning-time" value="less-than-1-hour" type="radio" class="input-radio" checked>
+              Less than 1 hour
+          </label>
+
+          <label>
+            <input name="learning-time" value="1-2-hours" type="radio" class="input-radio"> 
+              1-2 hours
+          </label>
+
+          <label>
+            <input name="learning-time" value="2-4-hours" type="radio" class="input-radio">
+              2-4 hours
+          </label>
+
+          <label>
+            <input name="learning-time" value="more-than-4-hours" type="radio" class="input-radio">
+              More than 4 hours
+          </label>
+        </div>
+
+        <!--Discovery Source-->
+
+        <div class="form-group">
+          <p>How did you hear about us?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="friend">Friend</option>
+            <option value="Family">Relatives</option>
+            <option value="Internet">Internet</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!--Languages that user knows-->
+
+        <div class="form-group">
+          <p>
+            What programming languages do you know?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="know"
+              value="html"
+              type="checkbox"
+              class="input-checkbox"
+            />HTML</label
+          >
+          <label>
+            <input
+              name="know"
+              value="css"
+              type="checkbox"
+              class="input-checkbox"
+            />CSS</label
+          >
+          <label
+            ><input
+              name="know"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />JavaScript</label
+          >
+          <label
+            ><input
+              name="know"
+              value="java"
+              type="checkbox"
+              class="input-checkbox"
+            />Java</label>
+
+          <label
+            ><input
+              name="know"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+              >Other</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
