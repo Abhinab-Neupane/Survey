@@ -20,7 +20,8 @@
       <!--Personal Details-->
 
       <form id="survey-form">
-        <div class="form-group">
+
+        <fieldset class="form-group">
           <label id="name-label" for="name">Name</label>
           <input
             type="text"
@@ -29,10 +30,9 @@
             class="form-control"
             placeholder="Enter your name"
             required
-          />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
+          >
+        
+          <label id="email-label" for="email">Email</label> 
           <input
             type="email"
             name="email"
@@ -40,11 +40,10 @@
             class="form-control"
             placeholder="Enter your Email"
             required
-          />
-        </div>
-        <div class="form-group">
+          > 
+
           <label id="number-label" for="number">Age<span class="clue">(optional)</span></label
-          >
+          > 
           <input
             type="number"
             name="age"
@@ -53,13 +52,13 @@
             max="99"
             class="form-control"
             placeholder="Age"
-          />
-        </div>
+          > 
+        </fieldset>
 
         <!--Proficiency-->
 
-        <div class="form-group">
-          <p>How would you classify your programming proficiency level??</p>
+        <fieldset class="form-group">
+          <p>How would you classify your programming proficiency level?</p>
           <select id="dropdown" name="proficiency" class="form-control" required>
             <option disabled selected value>Select current proficiency</option>
             <option value="novice">Novice</option>
@@ -67,36 +66,53 @@
             <option value="intermediate">Intermediate</option>
             <option value="advanced">Advanced</option>
           </select>
-        </div>
+        </fieldset>
 
         <!--Time Dedication-->
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <p>How much time can you dedicate to learning programming each day?</p>
           <label>
-            <input name="learning-time" value="less-than-1-hour" type="radio" class="input-radio" checked>
+            <input 
+            name="learning-time" 
+            value="less-than-1-hour" 
+            type="radio" 
+            class="input-radio" 
+            checked>
               Less than 1 hour
           </label>
 
           <label>
-            <input name="learning-time" value="1-2-hours" type="radio" class="input-radio"> 
+            <input 
+            name="learning-time" 
+            value="1-2-hours" t
+            ype="radio" 
+            class="input-radio"> 
               1-2 hours
           </label>
 
           <label>
-            <input name="learning-time" value="2-4-hours" type="radio" class="input-radio">
+            <input 
+            name="learning-time" 
+            value="2-4-hours" 
+            type="radio" 
+            class="input-radio">
               2-4 hours
           </label>
 
           <label>
-            <input name="learning-time" value="more-than-4-hours" type="radio" class="input-radio">
+            <input 
+            name="learning-time" 
+            value="more-than-4-hours" 
+            type="radio" 
+            class="input-radio">
               More than 4 hours
           </label>
-        </div>
+        </fieldset>
 
         <!--Discovery Source-->
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <p>How did you hear about us?</p>
           <select id="most-like" name="mostLike" class="form-control" required>
             <option disabled selected value>Select an option</option>
@@ -105,58 +121,65 @@
             <option value="Internet">Internet</option>
             <option value="Other">Other</option>
           </select>
-        </div>
+        </fieldset>
 
         <!--Languages that user knows-->
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <p>
             What programming languages do you know?
             <span class="clue">(Check all that apply)</span>
           </p>
 
-          <label
-            ><input
+          <label>
+            <input
               name="know"
               value="html"
               type="checkbox"
-              class="input-checkbox"
-            />HTML</label
-          >
+              class="input-checkbox">
+               HTML
+          </label>
+
           <label>
             <input
               name="know"
               value="css"
               type="checkbox"
-              class="input-checkbox"
-            />CSS</label
-          >
-          <label
-            ><input
+              class="input-checkbox"> 
+                CSS
+          </label>
+
+          <label>
+             <input
               name="know"
               value="javascript"
               type="checkbox"
-              class="input-checkbox"
-            />JavaScript</label
-          >
-          <label
-            ><input
-              name="know"
-              value="java"
-              type="checkbox"
-              class="input-checkbox"
-            />Java</label>
+              class="input-checkbox"> 
+                JavaScript</label>
 
-          <label
-            ><input
-              name="know"
-              value="other"
-              type="checkbox"
-              class="input-checkbox"
-              >Other</label>
-        </div>
+          <label>
+            <input 
+            name="know" 
+            value="java"
+            type="checkbox" 
+            class="input-checkbox">
+              Java
+          </label>
 
-        <div class="form-group">
+          <label>
+          <input 
+          name="know" 
+          value="other" 
+          type="checkbox" 
+          class="input-checkbox">
+            Other
+          </label>
+          
+        </fieldset>
+
+        <!--Suggestions & Comments-->
+
+        <fieldset class="form-group">
           <p>Any comments or suggestions?</p>
           <textarea
             id="comments"
@@ -164,13 +187,13 @@
             name="comment"
             placeholder="Enter your comment here..."
           ></textarea>
-        </div>
+        </fieldset>
 
-        <div class="form-group">
+        <fieldset class="form-group">
           <button type="submit" id="submit" class="submit-button">
             Submit
           </button>
-        </div>
+        </fieldset>
       </form>
     </div>
   </body>
